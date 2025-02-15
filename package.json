@@ -1,0 +1,27 @@
+{
+  "name": "github-info",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "githubInfo": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -w"
+  },
+  "author": "Mohamed Omer",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1",
+    "cli-table3": "^0.6.5",
+    "my-task-tracker": "file:"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.10"
+  }
+}

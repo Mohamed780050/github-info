@@ -1,12 +1,31 @@
+export type types =
+  | "PushEvent"
+  | "CreateEvent"
+  | "DeleteEvent"
+  | "ForkEvent"
+  | "PublicEvent"
+  | "WatchEvent"
+  | "PullRequestEvent"
+  | "PullRequestReviewEvent"
+  | "PullRequestReviewCommentEvent"
+  | "IssuesEvent"
+  | "IssueCommentEvent"
+  | "MemberEvent"
+  | "TeamAddEvent"
+  | "OrgBlockEvent"
+  | "WorkflowRunEvent"
+  | "CheckRunEvent"
+  | "CheckSuiteEvent"
+  | "GollumEvent"
+  | "SecurityAdvisoryEvent"
+  | "DependabotAlertEvent"
+  | "RepositoryVulnerabilityAlertEvent"
+  | "MarketplacePurchaseEvent"
+  | "SponsorshipEvent";
+
 export interface dataInterface {
   id: string;
-  type:
-    | "PushEvent"
-    | "CreateEvent"
-    | "DeleteEvent"
-    | "ForkEvent"
-    | "PublicEvent"
-    | "WatchEvent";
+  type: types;
   actor: {
     id: number;
     login: string;

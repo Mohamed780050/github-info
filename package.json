@@ -14,7 +14,7 @@
   },
   "author": "Mohamed Omer",
   "license": "ISC",
-  "description": "",
+  "description": "This package allows you to retrieve the recent public events of any GitHub user by providing their username. It fetches data directly from the GitHub API, giving you insights into their activity, such as commits, issues, pull requests, and more. Perfect for tracking user contributions or analyzing GitHub activity programmatically.",
   "dependencies": {
     "axios": "^1.7.9",
     "boxen": "^8.0.1",
